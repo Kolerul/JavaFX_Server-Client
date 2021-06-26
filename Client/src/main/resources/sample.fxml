@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1500.0" style="-fx-background-color: #2e3348; -fx-background-image: url(&quot;Tanks1.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicationPart.AuthorizationWindowController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Button fx:id="signInButton" layoutX="606.0" layoutY="402.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="288.0" style="-fx-background-color: red; -fx-border-color: black;" text="%Controller.signInButton" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <MenuButton fx:id="languageMenuButton" graphicTextGap="0.0" layoutX="32.0" layoutY="25.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" style="-fx-background-image: url(&quot;worldoftanks.png&quot;); -fx-background-size: 100% 100%; -fx-background-color: #808080;" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+        <items>
+          <MenuItem fx:id="russianMenuItem" mnemonicParsing="false" text="Русский" />
+          <MenuItem fx:id="lithuanianMenuItem" mnemonicParsing="false" text="Lietuviškas" />
+            <MenuItem fx:id="columbianMenuItem" mnemonicParsing="false" text="Español (Colombia)" />
+            <MenuItem fx:id="romanianMenuItem" mnemonicParsing="false" text="Română" />
+        </items>
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+      <Button fx:id="signUpButton" layoutX="606.0" layoutY="472.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="288.0" style="-fx-background-color: #696969; -fx-border-color: black;" text="%Controller.signUpButton" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="100.0" layoutY="170.0" prefHeight="56.0" prefWidth="1299.0" textFill="#f7f4f4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginTextField" layoutX="606.0" layoutY="260.0" prefHeight="44.0" prefWidth="288.0" promptText="%Controller.loginTextField" style="-fx-border-color: black; -fx-background-color: white;">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="606.0" layoutY="333.0" prefHeight="44.0" prefWidth="288.0" promptText="Введите пароль" style="-fx-border-color: black; -fx-background-color: white;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="closeButton" cancelButton="true" layoutX="680.0" layoutY="544.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="139.0" style="-fx-background-color: #cc0605; -fx-border-color: black;" text="%Controller.closeButton" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="authLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="381.0" layoutY="49.0" prefHeight="67.0" prefWidth="737.0" text="%Controller.authLabel" textFill="#f8f8fc">
+         <font>
+            <Font name="Agency FB" size="60.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="465.0" layoutY="192.0" opacity="0.0" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #f0f2f5;" />
+      <AnchorPane layoutX="1020.0" layoutY="19.0" opacity="0.0" prefHeight="14.0" prefWidth="120.0" style="-fx-background-color: #808080;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

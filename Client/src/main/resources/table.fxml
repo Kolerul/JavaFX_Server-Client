@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="1000.0" style="-fx-background-color: #2e3348; -fx-background-image: url(&quot;stol1.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicationPart.TableController">
+    <children>
+        <AnchorPane layoutX="1.0" layoutY="135.0" prefHeight="465.0" prefWidth="1000.0" style="-fx-background-color: #f0f2f5;">
+         <children>
+            <TableView fx:id="table" layoutY="6.0" prefHeight="404.0" prefWidth="980.0" style="-fx-border-color: silver;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <columns>
+                <TableColumn fx:id="id" maxWidth="40.0" prefWidth="59.0" text="id" />
+                  <TableColumn fx:id="owner" prefWidth="75.0" text="author" />
+                <TableColumn fx:id="name" maxWidth="300.0" prefWidth="100.0" text="name" />
+                  <TableColumn prefWidth="98.0" text="Coordinates">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="x" fx:id="x" />
+                        <TableColumn fx:id="y" prefWidth="75.0" text="y" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn fx:id="price" prefWidth="87.0" text="area" />
+                  <TableColumn fx:id="ticketType" maxWidth="100.0" prefWidth="94.0" text="government" />
+                  <TableColumn prefWidth="432.0" text="Venue">
+                     <columns>
+                        <TableColumn fx:id="venueId" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="venueName" prefWidth="116.0" text="name" />
+                        <TableColumn fx:id="capacity" prefWidth="126.0" text="capacity" />
+                        <TableColumn fx:id="venueType" minWidth="0.0" prefWidth="115.0" text="venueType" />
+                     </columns>
+                  </TableColumn>
+              </columns>
+            </TableView>
+         </children>
+        </AnchorPane>
+      <Button fx:id="addButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: #42B72A;" text="%Controller.addButton" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="Arial Nova" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="changeButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: red;" text="%Controller.changeButton" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="Arial Nova" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="editButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: #1877f2;" text="%Controller.editButton" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="125.0">
+         <font>
+            <Font name="Arial Nova" size="14.0" />
+         </font>
+      </Button>
+        <Label layoutX="461.0" layoutY="48.0" prefHeight="47.0" prefWidth="301.0" text="%Controller.table" textAlignment="RIGHT" textFill="WHITE" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font name="Arial Nova" size="30.0" />
+            </font>
+        </Label>
+      <Label fx:id="userLabel" layoutX="748.0" layoutY="49.0" prefHeight="45.0" prefWidth="238.0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="89.0" layoutX="663.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="278.8187484741211" AnchorPane.topAnchor="28.0">
+         <image>
+            <Image url="@User.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
